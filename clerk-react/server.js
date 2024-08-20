@@ -10,11 +10,10 @@ const app = express();
 
 // CORS setup to allow requests from the frontend
 app.use(cors({
-  origin: ['https://zingy-licorice-959ee5.netlify.app/', 'https://server-zxi0.onrender.com'],
+  origin: 'https://zingy-licorice-959ee5.netlify.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
 
 app.use(bodyParser.json());
 
