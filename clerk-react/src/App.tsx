@@ -13,6 +13,8 @@ import Header from './Components/Header';
 import ProductList from './Pages/ProductList';
 // @ts-ignore
 import Visualizations from './Pages/Visualizations';
+// @ts-ignore
+import AiIntegration from './Pages/AiIntegration'
 
 const App: React.FC = () => {
   return (
@@ -28,6 +30,7 @@ const App: React.FC = () => {
             <Route path="/product-form" element={<ProductForm />} />
             <Route path="/product-list" element={<ProductList />} />
             <Route path="/visualizations" element={<Visualizations />} />
+            <Route path="/ai-integration" element={<AiIntegration />} />
           </Routes>
         </SignedIn>
       </header>
