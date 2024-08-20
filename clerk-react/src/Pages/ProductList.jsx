@@ -10,7 +10,7 @@ const ProductList = () => {
   // Function to fetch products from the server
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://server-zxi0.onrender.com/api/products');
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -24,7 +24,7 @@ const ProductList = () => {
   // Function to handle product deletion
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/products/${productId}`);
+      await axios.delete(`https://server-zxi0.onrender.com/api/products/${productId}`);
       fetchProducts(); // Reload the product list after deletion
     } catch (error) {
       console.error('Error deleting product:', error);

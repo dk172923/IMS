@@ -12,7 +12,7 @@ const Visualizations = () => {
   // Function to fetch products from the server
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products'); // Update with your actual API endpoint
+      const response = await axios.get('https://server-zxi0.onrender.com/api/products'); // Update with your actual API endpoint
       setProductData(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);

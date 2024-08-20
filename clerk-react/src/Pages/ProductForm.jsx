@@ -28,7 +28,7 @@ const ProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/products', productWithUserId);
+      await axios.post('https://server-zxi0.onrender.com/api/products', productWithUserId);
       alert('Product submitted successfully!');
       setProduct({ name: '', manufacturingCompany: '', quantity: '', description: '', category: '' });
     } catch (error) {
