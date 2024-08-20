@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the trained model
-model = joblib.load('expense_categorizer_model.pk4')
+model = joblib.load('expense_categorizer_model.pk3')
 
 @app.route('/api/categorize', methods=['POST'])
 def categorize():
