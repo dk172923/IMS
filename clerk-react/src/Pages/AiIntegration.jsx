@@ -15,7 +15,7 @@ const AIIntegration = () => {
 
     try {
       // Send the description to the Flask API for categorization
-      const response = await axios.post('https://python-flask-1-rh3t.onrender.com/api/categorize', {
+      const response = await axios.post('https://server-zxi0.onrender.com/api/categorize', {
         description,
       });
 

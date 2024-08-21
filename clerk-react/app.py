@@ -13,7 +13,7 @@ model = joblib.load('expense_categorizer_model.pk3')
 @app.route('/api/categorize', methods=['POST'])
 def categorize():
     data = request.json
-    description = data.get('description', '')
+    description = data.get('description', '') # type: ignore
     
     # Predict the category using the model
     prediction = model.predict([description])
